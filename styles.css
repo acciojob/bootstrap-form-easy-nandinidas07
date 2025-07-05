@@ -1,2 +1,16 @@
 
 /* Your CSS Code here. */
+.invalid-feedback {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+input:invalid + .invalid-feedback,
+select:invalid + .invalid-feedback {
+  display: block;
+}
+
+.error {
+  border: 1px solid red;
+}
