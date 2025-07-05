@@ -2,40 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Internship Form</title>
   <link rel="stylesheet" href="styles.css">
   <style>
     .form-label {
-      font-weight: bold;
       display: block;
       margin-top: 10px;
+      font-weight: bold;
     }
-
-    .form-control,
-    .form-select,
-    .form-check-input {
+    .form-control, .form-select, .form-check-input {
       width: 100%;
       padding: 8px;
       margin-bottom: 5px;
     }
-
     .invalid-feedback {
       color: red;
       font-size: 12px;
       display: none;
     }
-
     input:invalid + .invalid-feedback,
     select:invalid + .invalid-feedback,
     input[type="checkbox"]:invalid + .invalid-feedback {
       display: block;
     }
-
     button {
       margin-top: 10px;
       padding: 10px 20px;
-      background-color: #ff3c3c;
+      background-color: red;
       color: white;
       border: none;
       cursor: pointer;
@@ -78,10 +71,8 @@
     <input type="text" id="roll-no-input" class="form-control" required />
     <div class="invalid-feedback">Please provide a valid roll no</div>
 
-    <label class="form-label">
-      <input type="checkbox" id="conditions-checkbox" class="form-check-input" required />
-      Agree to terms and conditions
-    </label>
+    <input type="checkbox" id="conditions-checkbox" class="form-check-input" required />
+    <label for="conditions-checkbox" class="form-label">Agree to terms and conditions</label>
     <div class="invalid-feedback">You must agree before submitting</div>
 
     <button type="submit">Submit form</button>
